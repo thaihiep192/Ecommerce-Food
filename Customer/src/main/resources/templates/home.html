@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<!-- Basic -->
+
+<head th:replace="~{fragments::head}">
+
+
+</head>
+
+<body>
+<div th:replace="~{fragments::main-top}"></div>
+<!-- End Main Top -->
+
+<!-- Start Main Top -->
+<header th:replace="~{fragments::main-header}"></header>
+<!-- End Main Top -->
+
+<!-- Start Top Search -->
+<div th:replace="~{fragments::top-search}">
+</div>
+<!-- End Top Search -->
+
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img th:src="@{/images/Bun-Bo-Hue-.jpg}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> VietNam's Food</strong></h1>
+                        <p class="m-b-40">Enjoy your meal! <br> Have you a good, fun working day and delicious meal!</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img th:src="@{/images/Pho-ga1.png}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> VietNam's Food</strong></h1>
+                        <p class="m-b-40">Enjoy your meal! <br> Have you a good, fun working day and delicious meal!</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img th:src="@{/images/bun-tron.jpg}" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <h1 class="m-b-20"><strong>Welcome To <br> VietNam's Food</strong></h1>
+                        <p class="m-b-40">Enjoy your meal! <br> Have you a good, fun working day and delicious meal!</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- End Slider -->
+
+
+<!-- Start About Page  -->
+<div class="about-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" th:src="@{/images/vietnams-food.png}" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Chúng tôi là <span>VietNam's Food</span></h2>
+                <p>Việt Nam's Food là một cửa hàng đặc biệt chuyên về đồ ăn Việt Nam. Chúng tôi tự hào mang đến cho khách hàng những sản phẩm ẩm thực độc đáo và phong phú từ đất nước Việt Nam. Chúng tôi cam kết mang đến sự trải nghiệm thực sự của hương vị và văn hóa ẩm thực Việt Nam qua một loạt các món ăn ngon và độc đáo.
+                <p>Tại Việt Nam's Food, chúng tôi luôn ưu tiên chất lượng và sự đa dạng. Chúng tôi cung cấp các sản phẩm thực phẩm chất lượng cao, từ thực phẩm sạch, gia vị tự nhiên cho đến các món ăn truyền thống và đặc sản Việt Nam. Chúng tôi là điểm đến lý tưởng cho những người yêu thích ẩm thực Việt, cũng như những ai muốn khám phá thế giới của đồ ăn độc đáo và thú vị.</p>
+                <p>Nếu bạn đang tìm kiếm những sản phẩm thực phẩm chất lượng từ Việt Nam hoặc muốn khám phá thế giới của đồ ăn Việt Nam, hãy đến ViệtNam's Food và cảm nhận sự phong phú và hấp dẫn của ẩm thực nước này. Chúng tôi rất vui được phục vụ bạn và làm cho mỗi bữa ăn trở thành một trải nghiệm đặc biệt.</p>
+                <a class="btn hvr-hover" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Trusted</h3>
+                    <p>Lorem Ocean Prime Seafoods deals only with high-end processors and reliable importers.
+                        We handle quality products that we would serve to our friends and family. </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Professional</h3>
+                    <p>Here, guests are invited on an adventure in great food. We will create a great experience for
+                        you.
+                        We deliver more than just incredible food: We create remarkable experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>We are Expert</h3>
+                    <p>We Have spent many years in the seafood business, we know where to find the best products.
+                        Our menu is both classic and modern featuring lighter items to indulgent seafood presentations
+                        like crab, shrimp, lobster,... </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Start Feed  -->
+<div th:replace="~{fragments::instagram-box}">
+</div>
+
+<!-- End Feed  -->
+
+
+<!-- Start Footer  -->
+<footer th:replace="~{fragments::footer}">
+
+</footer>
+
+
+<!-- ALL JS FILES -->
+<div th:replace="~{fragments::script}"></div>
+</body>
+
+</html>

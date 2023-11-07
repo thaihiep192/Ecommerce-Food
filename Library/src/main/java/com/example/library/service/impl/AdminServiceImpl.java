@@ -5,19 +5,18 @@ import com.example.library.model.Admin;
 import com.example.library.repository.AdminRepository;
 import com.example.library.repository.RoleRepository;
 import com.example.library.service.AdminService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
-
+@RequiredArgsConstructor
 @Service
 public class AdminServiceImpl implements AdminService {
-    private BCryptPasswordEncoder passwordEncoder;
-    @Autowired
-    private AdminRepository adminRepository;
-    @Autowired
-    private RoleRepository roleRepository;
+
+    private final AdminRepository adminRepository;
+
+    private final RoleRepository roleRepository;
 
     @Override
     public Admin findByUsername(String username) {
@@ -30,7 +29,7 @@ public class AdminServiceImpl implements AdminService {
         admin.setFirstName(adminDto.getFirstName());
         admin.setLastName(adminDto.getLastName());
         admin.setUserName(adminDto.getUsername());
-        admin.setPassword(passwordEncoder.encode(adminDto.getPassword()));
+        admin.setPassword(adminDto.getPassword());
         admin.setRoles(Arrays.asList(roleRepository.findByName("ADMIN")));
         return adminRepository.save(admin);
     }
